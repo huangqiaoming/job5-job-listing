@@ -12,5 +12,6 @@ Rails.application.routes.draw do
         post :hide
       end
      end
+     resources :resumes
    end
 end
