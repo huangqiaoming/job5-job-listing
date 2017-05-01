@@ -1,4 +1,4 @@
-<div class="pull-right">
+<div class="pull-right" style="margin-top:40px;">
   <%= link_to("Add a job", new_job_path, :class => "btn btn-default" ) %>
 </div>
 <br><br>
@@ -62,7 +62,10 @@
             <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
           <% end %>
         <% end %>
-        <%= job.title %> &nbsp;<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %>
+        职缺：<%= job.title %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;薪资范围：<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %>
+        <br>
+        <br>
+        刊登时间：<%= job.created_at %>
       </div>
     <% end %>
   </div>

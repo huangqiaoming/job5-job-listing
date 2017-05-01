@@ -299,6 +299,15 @@ p {
     margin-bottom: 60px;
     letter-spacing: 3px;
 }
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto 0px;
+}
 .footer {
     position: absolute;
     width: 100%;
@@ -306,6 +315,7 @@ p {
     background-color: #111;
     text-align: center;
     padding: 3em 0;
+    bottom: 0;
 }
 .footer .container {
     color: #fff;
