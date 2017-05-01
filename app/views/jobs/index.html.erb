@@ -62,7 +62,7 @@
             <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
           <% end %>
         <% end %>
-        职缺：<%= job.title %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;薪资范围：<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %>
+        职缺：<%= job.title %>|薪资范围：<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %>
         <br>
         <br>
         刊登时间：<%= job.created_at %>
