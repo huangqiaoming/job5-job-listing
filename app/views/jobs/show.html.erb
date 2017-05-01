@@ -24,9 +24,9 @@
         <%= @job.description %>
       </p>
     </div>
-    <div> 薪酬 : <%= job.wage_lower_bound %>-<%= job.wage_upper_bound %> </div>
-    <div class="pull-right">
-      <%= link_to("投递简历", new_job_resume_path(@job), :class => "btn btn-primary btn-lg btn-danger") %>
-    </div>
+    <div style="margin-bottom: 20px;"> 薪酬 : <%= @job.wage_lower_bound %>-<%= @job.wage_upper_bound %> </div>
+    <!-- <div class="pull-right"> -->
+      <%= link_to("投递简历", new_job_resume_path(@job), :class => "btn btn-primary btn-lg btn-danger" ) %>
+    <!-- </div> -->
   </div>
 </div>
