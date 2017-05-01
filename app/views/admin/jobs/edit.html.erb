@@ -8,6 +8,11 @@
   <%= f.input :wage_upper_bound, :label => "薪资上限" %>
   <%= f.input :contact_email %>
   <%= f.input :is_hidden %>
+
+  <% if @job.image.present? %>
+  <%= image_tag(@job.image.thumb.url) %>
+  <% end %>
+  <%= f.input :image, as: :file %>
   <%= f.submit "Submit" %>
 
 <% end %>

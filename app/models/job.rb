@@ -16,4 +16,7 @@ class Job < ApplicationRecord
     self.is_hidden = true
     self.save
   end
+
+  mount_uploader :image, ImageUploader
+
 end
