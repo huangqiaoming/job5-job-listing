@@ -11,8 +11,10 @@
 
   <% if @job.image.present? %>
   <%= image_tag(@job.image.thumb.url) %>
-  <% end %>
+  <% else %>
   <%= f.input :image, as: :file %>
+  <% end %>
+
   <%= f.submit "Submit" %>
 
 <% end %>

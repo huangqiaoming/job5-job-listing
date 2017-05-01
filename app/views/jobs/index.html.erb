@@ -21,7 +21,7 @@
         </li>
     </ul>
 </div>
-<table class="table table-boldered">
+<!-- <table class="table table-boldered">
   <thead>
         <tr>
             <td>
@@ -50,4 +50,20 @@
   </tr>
   <% end %>
   </tbody>
-</table>
+</table> -->
+<div class="container">
+  <div class="row">
+    <% @jobs.each do |job| %>
+      <div class="col-xs-6 col-md-3">
+        <%= link_to job_path(job) do %>
+          <% if job.image.present? %>
+            <%= image_tag(job.image.thumb.url, class: "thumbnail") %>
+          <% else %>
+            <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+          <% end %>
+        <% end %>
+        <%= job.title %> &nbsp;<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %>
+      </div>
+    <% end %>
+  </div>
+</div>
