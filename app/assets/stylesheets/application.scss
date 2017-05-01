@@ -299,24 +299,19 @@ p {
     margin-bottom: 60px;
     letter-spacing: 3px;
 }
-// footer {
-//     position: ;(此auto也可，其他不可)
-//     bottom: 0;
-//     width: 100%;
-//     height: 50px;
-//     color: #ffffff;
-//     background-color: #4b5a61;
-// }
+
 
 html, body {
-    height: 100%;
+  height: 100%;
+  margin: 0;
 }
-
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -5px;
+.body-content {
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+.footer {
+  height: 60px;
+  margin-top: -60px;
 }
 .footer {
     position: relative;

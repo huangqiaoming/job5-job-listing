@@ -9,13 +9,12 @@
     </head>
 
     <body>
-
-<div class="container-fluid">
+      <div class="container-fluid body-content">
+        <div class="content-inside">
           <div class="row">
             <%= render "common/navbar" %>
             <%= render "common/flashes" %>
           </div>
-            <div class="wrapper">
             <div class="row">
               <div class="col-md-2">
                 <ul class="nav nav-pills nav-stacked" style="max-width: 300px; padding-top:20px;">
@@ -26,11 +25,10 @@
                 <%= yield %>
             </div>
            </div>
-           </div>
 
-</div>
-        <div class="push"></div>
-        <%= render "common/footer" %>
+        </div>
+      </div>
 
+      <%= render "common/footer" %>
     </body>
 </html>
